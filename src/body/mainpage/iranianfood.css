@@ -1,0 +1,1766 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: hamid;
+    src: url("../../fonts/Hamid.ttf");
+  } 
+   main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    width: 1400px;
+    height:1200px;
+    margin-right: -70px !important;
+    margin-top: 170px !important;
+    padding: auto;
+  }
+  .main1{
+    position: absolute !important;
+    top: -20px !important;
+    right: 100px;
+  }
+  .main2{
+    position: absolute !important;
+    top: -20px !important;
+    right: 100px;
+  }
+  .main3{
+    position: absolute;
+    top: -20px !important;
+    right: 100px;
+  }
+  .main4{
+    position: absolute;
+    top: -20px !important;
+    right: 100px;
+  }
+  .main5{
+    position: absolute;
+    top: -20px !important;
+    right: 100px;
+  }
+  
+  .footer2{
+    top: 1700px;
+  }
+  .shows{
+    display: none !important;
+  }
+  
+  /* .showes{
+    right: 0px !important;
+    transition:  ease .5s ;
+  }
+  .page2 main .card12{
+    right: 21000px ;
+    transition:  ease .5s ;
+  }
+  .page2 main .card12:nth-of-type(even){
+    transform: -21000px;
+    transition:  ease .5s ;
+  } */
+  
+  .page2 .cardr1 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/26.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  
+  .page2 .cardr2 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/45.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  
+  .page2 .cardr3 {
+    display: flex ;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/36.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr4 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/29.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr5 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/71.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr6 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/31.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr7 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/68.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr8 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/19.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr9 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/48.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr10 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/4.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr11 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/46.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr12 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/79.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr13 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/27.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr14 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/61.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr15 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/62.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr16 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/18.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr17 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/17.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page2 .cardr18 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/57.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr19 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/82.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr20 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/66.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr21 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/81.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr22 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/90.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr23 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/95.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr24 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/20.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr25 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/87.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr26 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/33.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr27 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/1.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr28 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/75.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr29 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/76.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr30 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/35.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr31 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/63.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr32 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/37.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr33 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/2.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr34 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/16.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr35 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/41.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr36 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/67.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr38 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/84.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr39 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/88.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr40 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/44.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr41 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/92.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr42 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/3.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr43 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/40.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr37 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/77.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr44 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/91.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr45 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/25.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr46 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/65.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr47 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/59.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr48 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/10.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr49 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/64.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr50 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/60.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr51 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/14.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr52 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/83.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr53 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/43.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr54 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/12.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr55 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/93.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr56 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/49.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr57 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/30.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr58 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/21.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr59 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/38.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr60 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/13.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr61 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/96.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr62 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/22.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr63 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/6.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr64 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/8.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr65 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/74.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr66 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/28.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  
+  .cardr3 h3 {
+    position: absolute;
+    bottom: 40px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr2 h3 {
+    position: absolute;
+    bottom: 0px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  
+  .cardr1 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  
+  .cardr4 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr5 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr6 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr7 h3 {
+    position: absolute;
+    bottom: 23px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 26px;
+  }
+  .cardr8 h3 {
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr9 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr10 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr11 h3 {
+    position: absolute;
+    bottom: 25px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr12 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr13 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr14 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr15 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr16 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr17 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr18 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr19 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr20 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr21 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr22 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr23 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr24 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr25 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr26 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr27 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr28 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr29 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr30 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr31 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr32 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr33 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr34 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr35 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr36 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr37 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr38 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr39 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr40 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr41 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr42 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr43 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr44 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr45 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr46 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr47 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr48 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr49 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr50 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr51 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr52 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr53 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr54 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr55 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr56 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr57 h3 {
+    position: absolute;
+    bottom: 0px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr58 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr59 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr60 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr61 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr62 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr63 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr64 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr65 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr66 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  
+  .cardr1:hover,
+  .cardr2:hover,
+  .cardr3:hover,
+  .cardr4:hover,
+  .cardr5:hover,
+  .cardr6:hover,
+  .cardr7:hover,
+  .cardr8:hover,
+  .cardr9:hover,
+  .cardr10:hover,
+  .cardr11:hover,
+  .cardr12:hover,
+  .cardr13:hover,
+  .cardr14:hover,
+  .cardr15:hover,
+  .cardr16:hover,
+  .cardr17:hover,
+  .cardr18:hover,
+  .cardr19:hover,
+  .cardr20:hover,
+  .cardr21:hover,
+  .cardr22:hover,
+  .cardr23:hover,
+  .cardr24:hover,
+  .cardr25:hover,
+  .cardr26:hover,
+  .cardr27:hover,
+  .cardr28:hover,
+  .cardr29:hover,
+  .cardr30:hover,
+  .cardr31:hover,
+  .cardr32:hover,
+  .cardr33:hover,
+  .cardr33:hover,
+  .cardr34:hover,
+  .cardr35:hover,
+  .cardr36:hover,
+  .cardr37:hover,
+  .cardr38:hover,
+  .cardr39:hover,
+  .cardr40:hover,
+  .cardr41:hover,
+  .cardr42:hover,
+  .cardr43:hover,
+  .cardr44:hover,
+  .cardr45:hover,
+  .cardr46:hover,
+  .cardr47:hover,
+  .cardr48:hover,
+  .cardr49:hover,
+  .cardr50:hover,
+  .cardr51:hover,
+  .cardr52:hover,
+  .cardr53:hover,
+  .cardr54:hover,
+  .cardr55:hover,
+  .cardr56:hover,
+  .cardr57:hover,
+  .cardr58:hover,
+  .cardr59:hover,
+  .cardr60:hover,
+  .cardr61:hover,
+  .cardr62:hover,
+  .cardr63:hover,
+  .cardr64:hover,
+  .cardr65:hover,
+  .cardr66:hover{
+    transform: scale(1.1) !important;
+    cursor: pointer;
+  }
+  
+  .circle1 {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    background: -webkit-radial-gradient(
+        70% 30%,
+        circle,
+        rgba(233, 208, 194, 0.8),
+        rgba(235, 127, 33, 0.83) 50%
+      )
+      rgb(240, 233, 233);
+    border-radius: 50%;
+    padding-right: 15px;
+    bottom: -770px !important;
+    right: 60px;
+    cursor: pointer;
+  }
+  
+  .circle2 {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    padding-right: 15px;
+    background: -webkit-radial-gradient(
+      70% 30%,
+      circle,
+      rgba(233, 208, 194, 0.8),
+      rgba(235, 127, 33, 0.83) 50%
+    )
+    rgb(240, 233, 233);  border-radius: 50%;
+    bottom: -770px !important;
+    right: 110px;
+    cursor: pointer;
+  }
+  .circle3 {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    padding-right: 15px;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    background: -webkit-radial-gradient(
+      70% 30%,
+      circle,
+      rgba(233, 208, 194, 0.8),
+      rgba(235, 127, 33, 0.83) 50%
+    )
+    rgb(240, 233, 233);  border-radius: 50%;
+    bottom: -770px !important;
+    right: 160px;
+    cursor: pointer;
+  }
+  
+  .circle4 {
+    position: absolute;
+    display: inline-block;
+    font-size: x-large;
+    font-weight: 900;
+    padding-right: 15px;
+    width: 40px;
+    height: 40px;
+    background: -webkit-radial-gradient(
+      70% 30%,
+      circle,
+      rgba(233, 208, 194, 0.8),
+      rgba(235, 127, 33, 0.83) 50%
+    )
+    rgb(240, 233, 233);  border-radius: 50%;
+    bottom: -770px !important;
+    right: 210px;
+    cursor: pointer;
+  }
+  .circle5 {
+    position: absolute;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: x-large;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    background: -webkit-radial-gradient(
+      70% 30%,
+      circle,
+      rgba(233, 208, 194, 0.8),
+      rgba(235, 127, 33, 0.83) 50%
+    )
+    rgb(240, 233, 233);  border-radius: 50%;
+    bottom: -770px !important;
+    right: 260px;
+    cursor: pointer;
+  }
+  .main5 .circle5{
+    top: 400px;
+  }
+  .main5 .circle3{
+    top: 400px;
+  }
+  .main5 .circle2{
+    top: 400px;
+  }
+  .main5 .circle1{
+    top: 400px;
+  }
+  .main5 .circle4{
+    top: 400px;
+  }
+  .main2 .circle5{
+    top: 1430px !important;
+  }
+  .main2 .circle3{
+    top: 1430px;
+  }
+  .main2 .circle2{
+    top: 1430px !important;
+  }
+  .main2 .circle1{
+    top: 1430px !important;
+  }
+  .main2 .circle4{
+    top: 1430px;
+  }
+  .circle1:hover,
+  .circle2:hover,
+  .circle3:hover,
+  .circle4:hover,
+  .circle5:hover
+  {
+    background: -webkit-radial-gradient(
+        70% 30%,
+        circle,
+        rgba(239, 233, 232, 0.8),
+        rgba(219, 161, 109, 0.83) 50%
+      )
+      rgb(240, 233, 233);
+  }
+
+ .about{
+left: 20px;
+}
+
+.main5 {
+  top: -330px;
+  height: 100px;
+}
+  
+  
+  @media (max-width: 500px) {
+    main {
+      width: 800px;
+      height: 1200px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      justify-items: center;
+      flex-wrap: wrap;
+      transform: scale(0.6);
+      margin-top: -230px;
+      margin-right: -20px;
+      padding-right: 0px;
+    }
+    .page2 .main1{
+      top: 280px !important;
+      right: -120px;
+      height: 900px ;
+    }
+    .page2 .main2{
+      top: 280px !important;
+      right: -120px !important;
+    }
+     .main3{
+      top: 280px !important;
+      right: -120px;
+    }
+    .main4{
+      top: 280px !important;
+      right: -120px;
+    }
+    .main5{
+      top: 460px !important;
+      right: -120px;
+    }
+    .page2 .circle1 {
+      bottom: -1800px !important;
+      right: 100px;
+    }
+    .page2 .main2 .circle1 {
+     top:  2660px !important;
+      right: 100px;
+    }
+    .page2 .main2 .circle2 {
+      top:  2660px !important;
+       right: 160px;
+     }
+     .page2 .main2 .circle3 {
+      top:  2660px !important;
+       right: 220px;
+     }
+     .page2 .main2 .circle4 {
+      top:  2660px !important;
+       right: 280px;
+     }
+     .page2 .main2 .circle5 {
+      top:  2660px !important;
+       right: 340px;
+     }
+     .page2 .circle2 {
+      bottom: -1800px !important;
+      right: 160px;
+    }
+    .page2 .circle3 {
+      bottom: -1800px !important;
+      right: 220px;
+    }
+    .page2 .circle4 {
+      bottom: -1800px !important;
+      right: 280px;
+    }
+    .page2 .circle5 {
+      bottom: -1800px !important;
+      right: 340px;
+    }
+  }
+  
+  
+  

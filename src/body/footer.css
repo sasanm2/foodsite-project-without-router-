@@ -1,0 +1,265 @@
+.footer1 {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 1530px;
+  height: 200px;
+  background-color: rgb(29, 28, 27);
+  bottom: -250px;
+}
+.footer2 {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  width: 1530px;
+  height: 200px;
+  background-color: rgb(29, 28, 27);
+  bottom: -1100px !important;
+  right: 0px;
+}
+.footer3 {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 1530px;
+  height: 200px;
+  background-color: rgb(29, 28, 27);
+  bottom: -1870px !important;
+  right: 0px;
+}
+.footer4 {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 1530px;
+  height: 200px;
+  background-color: rgb(29, 28, 27);
+  bottom: -70px;
+  right:0px ;
+}
+ 
+
+.footer5 {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 1530px;
+  height: 200px;
+  background-color: rgb(29, 28, 27);
+  bottom: -210px !important;
+  right:0px ;
+}
+
+.email {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 0px;
+  width: 500px;
+  height: 100px;
+  background-color: rgb(29, 28, 27);
+}
+.footer5 .email h3 {
+  position: absolute;
+  font-size: 30px;
+  font-style: italic;
+  color: aliceblue;
+  right: 100px;
+  top: -360px;
+} 
+
+.socal {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 0px;
+  width: 500px;
+  height: 200px;
+  background-color: rgb(29, 28, 27);
+}
+.footer5 .socal {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 0px;
+  width: 500px;
+  height: 200px;
+  background-color: rgb(29, 28, 27);
+}
+.about {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 0px;
+  width: 500px;
+  height: 200px;
+  background-color: rgb(29, 28, 27);
+}
+.footer5 .about {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 0px;
+  width: 500px;
+  height: 200px;
+  background-color: rgb(29, 28, 27);
+}
+
+.icon1 {
+  background-image: url(../images/icons8-instagram-40.png);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 90px;
+  right: 100px;
+}
+.icon2 {
+  background-image: url(../images/icons8-telegram-app-40.png);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 90px;
+  right: 150px;
+}
+.icon3 {
+  background-image: url(../images/icons8-youtube-40.png);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 90px;
+  right: 200px;
+}
+
+.icon3:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.icon2:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.icon1:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.email:hover{
+    cursor: default;
+}
+.email h3 {
+  position: absolute;
+  font-size: 30px;
+  font-style: italic;
+  color: aliceblue;
+  right: 100px;
+}
+
+.email span {
+  position: absolute;
+  font-size: 30px;
+  font-style: italic;
+  color: rgb(136, 139, 142);
+  right: 100px;
+  top: 80px;
+}
+
+.about span {
+  position: absolute;
+  font-size: 15px;
+  font-style: italic;
+  color: rgb(136, 139, 142);
+  right: 390px;
+  top: 142px;
+}
+.footer5 .about span {
+  position: absolute;
+  font-size: 15px;
+  font-style: italic;
+  color: rgb(136, 139, 142);
+  right: 290px;
+  top: 42px;
+}
+.about:hover{
+    cursor: default;
+}
+
+@media (max-width: 500px) {
+  .footer1{
+    transform: scale(0.6);
+    height: 150px;
+    bottom: -250px;
+  }
+  .page2 .footer2{
+    transform: scale(0.6);
+    height: 150px;
+    bottom: 0px !important;
+    right:-580px;
+    display: none;
+  }
+  .footer3{
+    transform: scale(0.6);
+    height: 150px;
+    bottom: -770px !important;
+    right:-580px;
+  }
+  .footer4{
+    transform: scale(0.6);
+    height: 150px;
+    bottom: -780px;
+    right:-580px;
+  }
+  .footer5{
+    transform: scale(0.6);
+    height: 150px;
+    bottom: 580px !important;
+    right:-580px;
+  }
+  .email {
+    display: none;
+  }
+  .about {
+    right: 730px;
+    top: 0px;
+    height: 30px;
+  }
+  .page5 .email {
+    display: none;
+  }
+  .page5 .about {
+   display: none;
+  }
+  .icon1 {
+    top: 150px;
+  }
+  .icon2 {
+    top: 150px;
+  }
+  .icon3 {
+    top: 150px;
+  }
+  .about span {
+    right: -140px;
+    top: 100px;
+    z-index: 3;
+  }
+  .page5 .about span {
+    right: -140px;
+    top: 100px;
+    z-index: 3;
+  }
+  .socal {
+    right: 580px;
+    top: -90px;
+    height: 0px;
+    z-index: 2;
+  }
+  .page5 .socal {
+    right: 580px;
+    top: -90px;
+    height: 0px;
+    z-index: 2;
+  }
+}

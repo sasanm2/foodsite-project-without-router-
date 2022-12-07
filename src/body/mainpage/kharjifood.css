@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: hamid;
+    src: url("../../fonts/Hamid.ttf");
+  } 
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    width: 1400px;
+    height:700px;
+    margin-right: -70px;
+    margin-top: -820px;
+    padding: auto;
+  }
+  .shows{
+    display: none !important;
+  }
+  
+  .page4 .cardr1 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/73.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  
+  .page4 .cardr2 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/42.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  
+  .page4 .cardr3 {
+    display: flex ;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/47.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page4 .cardr4 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/70.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page4 .cardr5 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/85.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page4 .cardr6 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/9.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page4 .cardr7 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/34.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page4 .cardr8 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/78.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  
+  .page4 .cardr3 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr2 h3 {
+    position: absolute;
+    bottom: 0px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  
+  .cardr1 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  
+  .cardr4 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr5 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr6 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .page4 .cardr7 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 26px;
+  }
+  .page4 .cardr8 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  
+  .cardr1:hover,
+  .cardr2:hover,
+  .cardr3:hover,
+  .cardr4:hover,
+  .cardr5:hover,
+  .cardr6:hover,
+  .cardr7:hover,
+  .cardr8:hover
+  {
+    transform: scale(1.1) !important;
+    cursor: pointer;
+  }
+  .footer4{
+    top: 860px !important;
+  }
+
+ .about{
+left: 20px;
+}  
+  @media (max-width: 500px) {
+    main {
+      width: 800px;
+      height: 900px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      justify-items: center;
+      flex-wrap: wrap;
+      transform: scale(0.6);
+      margin-top: -360px !important;
+      margin-right: -20px;
+      padding-right: 0px;
+    }
+    .footer4{
+      top: 960px !important;
+    }
+  }
+  
+  
+  

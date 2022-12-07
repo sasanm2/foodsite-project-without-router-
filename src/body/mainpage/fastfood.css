@@ -1,0 +1,552 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: hamid;
+    src: url("../../fonts/Hamid.ttf");
+  } 
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    width: 1400px;
+    height:1200px;
+    margin-right: -70px;
+    margin-top: -520px;
+    padding: auto;
+  }
+  .shows{
+    display: none !important;
+  }
+  
+  /* .showes{
+    transform:translate(0) !important;
+    transition:  ease .5s ;
+  }
+  .page3 main .card11{
+    transform: translate(400%);
+    transition:  ease .5s ;
+  }
+  .page3 main .card11:nth-of-type(even){
+    transform: translate(-400%);
+    transition:  ease .5s ;
+  } */
+  
+  .page3 .cardr1 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/23.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  
+  .page3 .cardr2 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/24.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  
+ .page3 .cardr3 {
+    display: flex ;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/86.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr4 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/54.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr5 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/7.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr6 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/55.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr7 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/72.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr8 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/94.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr9 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/52.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr10 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/32.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr11 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/15.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr12 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/80.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr13 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/53.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr14 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/89.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr15 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/69.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr16 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/5.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr17 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/11.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .page3 .cardr18 {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    position: relative;
+    background-color: rgb(246, 251, 252);
+    margin-top: 30px;
+    border-radius: 20%;
+    opacity: 0.9;
+    background-image: url("/src/images/300dar200/51.png");
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 14px rgb(108, 115, 116);
+  }
+  .cardr3 h3 {
+    position: absolute;
+    bottom: 40px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr2 h3 {
+    position: absolute;
+    bottom: 0px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  
+  .cardr1 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  
+  .page3 .cardr4 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr5 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr6 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .page3 .cardr7 h3 {
+    position: absolute;
+    bottom: 5px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 26px;
+  }
+  .page3 .cardr8 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr9 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr10 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .page3 .cardr11 h3 {
+    position: absolute;
+    bottom: 5px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr12 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr13 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .page3 .cardr14 h3 {
+    position: absolute;
+    bottom: 33px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .page3 .cardr15 h3 {
+    position: absolute;
+    bottom: 5px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr16 h3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr17 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  .cardr18 h3 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 26px;
+  }
+  
+  .cardr1:hover,
+  .cardr2:hover,
+  .cardr3:hover,
+  .cardr4:hover,
+  .cardr5:hover,
+  .cardr6:hover,
+  .cardr7:hover,
+  .cardr8:hover,
+  .cardr9:hover,
+  .cardr10:hover,
+  .cardr11:hover,
+  .cardr12:hover,
+  .cardr13:hover,
+  .cardr14:hover,
+  .cardr15:hover,
+  .cardr16:hover,
+  .cardr17:hover,
+  .cardr18:hover
+  {
+    transform: scale(1.1) !important;
+    cursor: pointer;
+  }
+  
+  .page3 .circle1 {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    background: -webkit-radial-gradient(
+        70% 30%,
+        circle,
+        rgba(233, 208, 194, 0.8),
+        rgba(235, 127, 33, 0.83) 50%
+      )
+      rgb(240, 233, 233);
+    border-radius: 50%;
+    padding-right: 15px;
+    bottom: -270px;
+    right: 60px;
+    cursor: pointer;
+  }
+  
+  .page3 .circle2 {
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    padding-right: 15px;
+    background: -webkit-radial-gradient(
+      70% 30%,
+      circle,
+      rgba(233, 208, 194, 0.8),
+      rgba(235, 127, 33, 0.83) 50%
+    )
+    rgb(240, 233, 233);  border-radius: 50%;
+    bottom: -270px;
+    right: 110px;
+    cursor: pointer;
+  }
+  .page3 .main2 .circle2{
+    top: 400px !important;
+  }
+  .page3 .main2 .circle1 {
+    top: 400px !important;
+  }
+  
+  .circle1:hover,
+  .circle2:hover
+  {
+    background: -webkit-radial-gradient(
+        70% 30%,
+        circle,
+        rgba(239, 233, 232, 0.8),
+        rgba(219, 161, 109, 0.83) 50%
+      )
+      rgb(240, 233, 233);
+  }
+
+ .about{
+left: 20px;
+}
+
+.page3 .main2 {
+  top: -330px;
+  height: 100px;
+}
+  
+  
+  @media (max-width: 500px) {
+    main {
+      width: 800px;
+      height: 1200px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      justify-items: center;
+      flex-wrap: wrap;
+      transform: scale(0.6);
+      margin-top: -230px !important;
+      margin-right: -20px;
+      padding-right: 0px;
+    }
+    .page3 .main1{
+      position: absolute;
+      top: 430px !important;
+      right: -170px !important;
+      height: 100px !important;
+    }
+    .page3 .main2{
+      top: 430px !important;
+      right: -170px !important;
+      height: 100px !important;
+    }
+    .page3 .circle1 {
+      bottom: -2620px !important;
+      right: 100px;
+    }
+    .page3 .circle2 {
+      bottom: -2620px !important;
+      right: 160px;
+    } 
+  }
+  
+  
+  

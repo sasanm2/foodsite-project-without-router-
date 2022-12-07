@@ -1,0 +1,7170 @@
+* {
+  box-sizing: border-box !important;
+}
+
+@font-face {
+  font-family: hamid;
+  src: url(./fonts/Hamid.ttf);
+}
+body {
+  overflow-x: hidden;
+  display: flex;
+  position: relative;
+  direction: rtl;
+  flex-direction: column;
+  font-family: hamid;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  margin-right: 0px !important;
+  background-color: antiquewhite;
+  background-position: center;
+  background-image: url(/src/images/1843912.jpg);
+}
+.btn {
+  display: none;
+  z-index: 6;
+}
+
+.line {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: black;
+  top: 10px;
+  left: 10px;
+}
+
+.line1 {
+  margin-top: 0;
+  transition: all ease 0.7s;
+}
+
+.line2 {
+  margin-top: 10px;
+  opacity: 1;
+  transition: all ease 0.2s;
+  transition-delay: 0.2s;
+}
+.line3 {
+  margin-top: 20px;
+  transition: all ease 0.7s;
+}
+
+.show1 {
+  transform-origin: top center;
+  transform: rotateZ(40deg);
+  top: 20px;
+  transition: all ease 0.7s;
+}
+.show2 {
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+
+.show3 {
+  transform-origin: top center;
+  transform: rotateZ(-40deg);
+  top: 0px;
+  left: 7px;
+  transition: all ease 0.7s;
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  width: 1560px;
+  right: 0px;
+  top: 0px;
+  height: 100px;
+  background: linear-gradient(140deg, rgb(62, 62, 184), rgb(217, 41, 41));
+}
+.sticky {
+  display: flex;
+  position: fixed;
+  width: 1560px;
+  right: 0px;
+  top: -25px;
+  height: 100px;
+  z-index: 3;
+  transition: all ease-in 0.5s;
+}
+
+.navbar {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  align-items: center;
+}
+
+nav {
+  display: flex !important;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: row;
+  right: 2px;
+}
+
+@keyframes change {
+  from {
+    background: linear-gradient(140deg, rgb(62, 62, 184), rgb(217, 41, 41));
+  }
+  to {
+    background: linear-gradient(140deg, rgb(217, 41, 41), rgb(62, 62, 184));
+  }
+}
+@keyframes left {
+  from {
+    right: 500px;
+    top: -300px;
+  }
+  to {
+    right: 120px;
+    top: -30px;
+  }
+}
+
+.activenav {
+  display: flex !important;
+  position: absolute;
+  flex-direction: column;
+  margin-right: 30px !important ;
+  top: 20px;
+  width: 400px;
+  height: 300px;
+  opacity: 0.9;
+  border-bottom-right-radius: 50%;
+  z-index: 3;
+  animation-name: change;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.activenav1 {
+  animation: left 0.5s ease 0s 1 alternate;
+  background: linear-gradient(140deg, rgb(62, 62, 184), rgb(217, 41, 41));
+}
+a {
+  display: flex;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: larger;
+  font-weight: 700;
+  font-style: italic;
+  color: black;
+  position: relative;
+  right: 2px;
+  align-content: space-around;
+  cursor: pointer;
+  font-family: hamid;
+}
+
+.one {
+  width: 200px;
+  height: 10px;
+  margin-bottom: 12px;
+  margin-right: 80px;
+}
+.one1 {
+  position: absolute;
+  right: 30px;
+  width: 200px;
+  top: 110px;
+  height: 10px;
+}
+
+.two {
+  width: 200px;
+  height: 10px;
+  margin-bottom: 14px;
+  margin-right: -50px;
+}
+.two2 {
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  top: 50px;
+  right: 100px;
+}
+
+.three {
+  width: 200px;
+  height: 10px;
+  margin-bottom: 20px;
+  margin-top: 1px;
+}
+.three3 {
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  top: 80px;
+  right: 60px;
+}
+
+.four {
+  width: 200px;
+  height: 10px;
+  margin-bottom: 20px;
+}
+.four4 {
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  top: 15px;
+  right: 130px;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 50px;
+  margin-right: 1200px;
+  background-image: url(/src/images/icons8-search-20\ 2.png);
+  cursor: pointer;
+}
+
+.search:hover {
+  background-image: url(/src/images/icons8-search-20.png);
+  transform: scale(0.95);
+  z-index: 6;
+}
+
+ .header input {
+  display: flex !important;
+  position: absolute;
+  width: 250px;
+  height: 25px;
+  left: 340px;
+  top: 70px;
+  border-radius: 10px;
+  background-color: rgb(194, 191, 188);
+  outline: none;
+  box-shadow: 1px 1px 6px;
+  font-family: hamid;
+  font-size: 16px;
+  color: rgb(14, 14, 14);
+  font-weight: 500;
+  z-index: 6;
+}
+
+
+/* @media (max-width : 1200px) {
+    .search{
+      margin-right:700px;
+      transform: scale(.8);
+    }
+  } */
+
+.two .icon1 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/icons8-cooking-20.png);
+}
+.two2 .icon1 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/icons8-cooking-20.png);
+}
+
+.three .icon2 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/icons8-hamburger-20.png);
+}
+.three3 .icon2 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/icons8-hamburger-20.png);
+}
+.four .icon3 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -30px;
+  background-image: url(./images/icons8-spaghetti-20.png);
+}
+.four4 .icon3 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/2959839_home_house_icon.png);
+}
+.one .icon4 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/2959839_home_house_icon.png);
+}
+.one1 .icon4 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/icons8-spaghetti-20.png);
+}
+
+.activea {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  width: 200px;
+  padding-top: 0px;
+  margin-top: 100px;
+  margin-right: 90px;
+}
+
+a:hover {
+  color: rgb(158, 150, 150);
+}
+.one:hover {
+  color: rgb(158, 150, 150);
+  transform: scale(0.9);
+}
+.two:hover {
+  color: rgb(158, 150, 150);
+  transform: scale(0.9);
+}
+.three:hover {
+  color: rgb(158, 150, 150);
+  transform: scale(0.9);
+}
+.four:hover {
+  color: rgb(158, 150, 150);
+  transform: scale(0.9);
+}
+
+.icon12 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/icons8-cooking-20\ 2.png);
+}
+
+.icon22 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/icons8-hamburger-20\ 2.png);
+}
+.icon32 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/icons8-spaghetti-20\ 2.png);
+}
+.icon42 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -25px;
+  background-image: url(./images/2203553_home_house_resident_root_icon.png);
+}
+.circle {
+  position: fixed;
+  padding-right: 15px;
+  width: 50px;
+  height: 50px;
+  background-image: url(./images/icons8-fork-50.png);
+  top: 700px !important;
+  right: 1420px;
+  cursor: pointer;
+  z-index: 7;
+}
+.circle:hover {
+  position: fixed;
+  padding-right: 15px;
+  width: 50px;
+  height: 50px;
+  background-image: url(./images/icons8-fork-502.png);
+  top: 700px !important;
+  right: 1420px;
+  cursor: pointer;
+  z-index: 7;
+}
+.page1 .con {
+  display: flex !important;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(204, 206, 208);
+  flex-direction: row;
+  position: absolute;
+  width: 600px;
+  border-radius: 10%;
+  height: 360px;
+  margin-right: 880px;
+  margin-top: 100px;
+  padding-bottom: 0px;
+  z-index: 7;
+}
+
+.page1 .con .card {
+  display: flex;
+  margin-top: 30px !important;
+  margin-bottom: -20px;
+  margin-right: 10px !important;
+  transform: scale(1);
+  z-index: 8;
+}
+.page1 .con .card:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+.page2 .con {
+  display: flex !important;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(204, 206, 208);
+  flex-direction: row;
+  position: absolute;
+  width: 600px;
+  border-radius: 10%;
+  height: 360px;
+  margin-right: 880px;
+  margin-top: 100px;
+  padding-bottom: 0px;
+  z-index: 7;
+}
+.page2 .con .card {
+  display: flex ;
+  margin-top: 30px !important;
+  margin-bottom: -20px;
+  margin-right: 10px !important;
+  transform: scale(1);
+  z-index: 8;
+}
+.page2 .con .card:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+.page3 .con {
+  display: flex !important;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(204, 206, 208);
+  flex-direction: row;
+  position: absolute;
+  width: 600px;
+  border-radius: 10%;
+  height: 360px;
+  margin-right: 880px;
+  margin-top: 100px;
+  padding-bottom: 0px;
+  z-index: 7;
+}
+
+.page3 .con .card {
+  display: flex;
+  margin-top: 30px !important;
+  margin-bottom: -20px;
+  margin-right: 10px !important;
+  transform: scale(1);
+  z-index: 8;
+}
+.page3 .con .card:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+.page4 .con {
+  display: flex !important;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(204, 206, 208);
+  flex-direction: row;
+  position: absolute;
+  width: 600px;
+  border-radius: 10%;
+  height: 360px;
+  margin-right: 880px;
+  margin-top: 100px;
+  padding-bottom: 0px;
+  z-index: 7;
+}
+
+.page4 .con .card {
+  display: flex;
+  margin-top: 30px !important;
+  margin-bottom: -20px;
+  margin-right: 10px !important;
+  transform: scale(1);
+  z-index: 8;
+}
+.page4 .con .card:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+.page5 .con {
+  display: flex !important;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(204, 206, 208);
+  flex-direction: row;
+  position: absolute;
+  width: 600px;
+  border-radius: 10%;
+  height: 360px;
+  margin-right: 880px;
+  margin-top: 100px;
+  padding-bottom: 0px;
+  z-index: 7;
+}
+
+.page5 .con .card {
+  display: flex;
+  margin-top: 30px !important;
+  margin-bottom: -20px;
+  margin-right: 10px !important;
+  transform: scale(1);
+  z-index: 8;
+}
+.page5 .con .card:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+
+
+.page1 .con .cardr1 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/26.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr2 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/45.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr3 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/36.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr4 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/29.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+} 
+.page1 .con .cardr5 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/71.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr6 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/31.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr7 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/68.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr8 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/19.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr9 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/48.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr10 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/4.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr11 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/46.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr12 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/79.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr13 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/27.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr14 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/61.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr15 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/62.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr16 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/18.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr17 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/17.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr18 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/57.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr19 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/82.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr20 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/66.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr21 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/81.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr22 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/90.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr23 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/95.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr24 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/20.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr25 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/87.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr26 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/33.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr27 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/1.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr28 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/75.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr29 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/76.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr30 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/35.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr31 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/63.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr32 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/37.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr33 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/2.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr34 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/16.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr35 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/41.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr36 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/67.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr38 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/84.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr39 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/88.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr40 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/44.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr41 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/92.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr42 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/3.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr43 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/40.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr37 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/77.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr44 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/91.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr45 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/25.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr46 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/65.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr47 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/59.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr48 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/10.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr49 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/64.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr50 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/60.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr51 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/14.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr52 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/83.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr53 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/43.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr54 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/12.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr55 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/93.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr56 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/49.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr57 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/30.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr58 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/21.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr59 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/38.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr60 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/13.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr61 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/96.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr62 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/22.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr63 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/6.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr64 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/8.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr65 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/74.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr66 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/28.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr67 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/23.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr68 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/24.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr69 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/86.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr70 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/54.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr71 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/7.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr72 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/55.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr73 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/72.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr74 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/94.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr75 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/52.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr76 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/32.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr77 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/15.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr78 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/80.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr79 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/53.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+} 
+.page1 .con .cardr80 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/89.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr81 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/69.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr82 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/5.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr83 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/11.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr84 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/51.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr85 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/73.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr86 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/42.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr87 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/47.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr88 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/70.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr89 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/85.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr90 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/9.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr91 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/34.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page1 .con .cardr92 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/78.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr1 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/26.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr2 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/45.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr3 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/36.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr4 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/29.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr5 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/71.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr6 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/31.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr7 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/68.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr8 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/19.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr9 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/48.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr10 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/4.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr11 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/46.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr12 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/79.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr13 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/27.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr14 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/61.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr15 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/62.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr16 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/18.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr17 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/17.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr18 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/57.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr19 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/82.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr20 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/66.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr21 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/81.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr22 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/90.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr23 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/95.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr24 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/20.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr25 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/87.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr26 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/33.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr27 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/1.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr28 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/75.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr29 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/76.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr30 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/35.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr31 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/63.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr32 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/37.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr33 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/2.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr34 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/16.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr35 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/41.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr36 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/67.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr38 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/84.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr39 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/88.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr40 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/44.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr41 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/92.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr42 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/3.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr43 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/40.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr37 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/77.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr44 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/91.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr45 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/25.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr46 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/65.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr47 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/59.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr48 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/10.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr49 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/64.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr50 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/60.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr51 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/14.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr52 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/83.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr53 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/43.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr54 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/12.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr55 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/93.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr56 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/49.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr57 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/30.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr58 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/21.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr59 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/38.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr60 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/13.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr61 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/96.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr62 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/22.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr63 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/6.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr64 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/8.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr65 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/74.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr66 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/28.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr67 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/23.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr68 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/24.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr69 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/86.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr70 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/54.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr71 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/7.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr72 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/55.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr73 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/72.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr74 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/94.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr75 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/52.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr76 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/32.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr77 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/15.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr78 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/80.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr79 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/53.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+} 
+.page2 .header .con .cardr80 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/89.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr81 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/69.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr82 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/5.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr83 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/11.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr84 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/51.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr85 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/73.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr86 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/42.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr87 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/47.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr88 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/70.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr89 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/85.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr90 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/9.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr91 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/34.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page2 .header .con .cardr92 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/78.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr1 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/26.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr2 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/45.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr3 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/36.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr4 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/29.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr5 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/71.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr6 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/31.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr7 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/68.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr8 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/19.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr9 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/48.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr10 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/4.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr11 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/46.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr12 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/79.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr13 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/27.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr14 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/61.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr15 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/62.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr16 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/18.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr17 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/17.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr18 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/57.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr19 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/82.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr20 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/66.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr21 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/81.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr22 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/90.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr23 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/95.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr24 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/20.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr25 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/87.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr26 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/33.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr27 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/1.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr28 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/75.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr29 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/76.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr30 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/35.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr31 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/63.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr32 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/37.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr33 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/2.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr34 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/16.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr35 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/41.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr36 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/67.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr38 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/84.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr39 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/88.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr40 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/44.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr41 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/92.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr42 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/3.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr43 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/40.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr37 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/77.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr44 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/91.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr45 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/25.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr46 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/65.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr47 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/59.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr48 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/10.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr49 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/64.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr50 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/60.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr51 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/14.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr52 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/83.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr53 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/43.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr54 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/12.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr55 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/93.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr56 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/49.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr57 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/30.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr58 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/21.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr59 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/38.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr60 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/13.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr61 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/96.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr62 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/22.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr63 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/6.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr64 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/8.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr65 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/74.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr66 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/28.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr67 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/23.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr68 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/24.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr69 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/86.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr70 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/54.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr71 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/7.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr72 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/55.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr73 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/72.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr74 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/94.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr75 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/52.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr76 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/32.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr77 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/15.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr78 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/80.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr79 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/53.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr80 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/89.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr81 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/69.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr82 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/5.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr83 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/11.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr84 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/51.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr85 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/73.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr86 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/42.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr87 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/47.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr88 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/70.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr89 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/85.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr90 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/9.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr91 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/34.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page3 .con .cardr92 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/78.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr1 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/26.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr2 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/45.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr3 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/36.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr4 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/29.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr5 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/71.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr6 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/31.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr7 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/68.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr8 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/19.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr9 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/48.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr10 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/4.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr11 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/46.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr12 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/79.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr13 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/27.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr14 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/61.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr15 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/62.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr16 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/18.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr17 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/17.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr18 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/57.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr19 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/82.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr20 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/66.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr21 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/81.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr22 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/90.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr23 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/95.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr24 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/20.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr25 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/87.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr26 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/33.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr27 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/1.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr28 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/75.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr29 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/76.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr30 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/35.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr31 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/63.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr32 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/37.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr33 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/2.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr34 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/16.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr35 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/41.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr36 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/67.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr38 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/84.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr39 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/88.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr40 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/44.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr41 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/92.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr42 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/3.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr43 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/40.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr37 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/77.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr44 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/91.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr45 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/25.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr46 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/65.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr47 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/59.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr48 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/10.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr49 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/64.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr50 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/60.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr51 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/14.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr52 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/83.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr53 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/43.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr54 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/12.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr55 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/93.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr56 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/49.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr57 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/30.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr58 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/21.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr59 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/38.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr60 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/13.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr61 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/96.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr62 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/22.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr63 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/6.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr64 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/8.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr65 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/74.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr66 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/28.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr67 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/23.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr68 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/24.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr69 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/86.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr70 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/54.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr71 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/7.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr72 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/55.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr73 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/72.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr74 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/94.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr75 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/52.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr76 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/32.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr77 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/15.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr78 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/80.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr79 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/53.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr80 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/89.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr81 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/69.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr82 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/5.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr83 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/11.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr84 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/51.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr85 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/73.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr86 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/42.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr87 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/47.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr88 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/70.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr89 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/85.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr90 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/9.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr91 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/34.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page4 .con .cardr92 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/78.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr1 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/26.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr2 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/45.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr3 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/36.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr4 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/29.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr5 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/71.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr6 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/31.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr7 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/68.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr8 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/19.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr9 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/48.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr10 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/4.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr11 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/46.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr12 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/79.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr13 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/27.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr14 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/61.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr15 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/62.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr16 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/18.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr17 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/17.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr18 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/57.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr19 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/82.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr20 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/66.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr21 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/81.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr22 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/90.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr23 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/95.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr24 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/20.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr25 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/87.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr26 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/33.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr27 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/1.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr28 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/75.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr29 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/76.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr30 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/35.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr31 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/63.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr32 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/37.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr33 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/2.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr34 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/16.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr35 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/41.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr36 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/67.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr38 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/84.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr39 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/88.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr40 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/44.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr41 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/92.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr42 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/3.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr43 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/40.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr37 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/77.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr44 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/91.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr45 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/25.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr46 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/65.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr47 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/59.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr48 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/10.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr49 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/64.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr50 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/60.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr51 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/14.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr52 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/83.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr53 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/43.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr54 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/12.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr55 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/93.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr56 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/49.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr57 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/30.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr58 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/21.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr59 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/38.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr60 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/13.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr61 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/96.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr62 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/22.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr63 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/6.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr64 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/8.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr65 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/74.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr66 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/28.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr67 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/23.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+
+.page5 .con .cardr68 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/24.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+
+.page5 .con .cardr69 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/86.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr70 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/54.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr71 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/7.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr72 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/55.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr73 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/72.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr74 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/94.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr75 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/52.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr76 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/32.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr77 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/15.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr78 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/80.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr79 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/53.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr80 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/89.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr81 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/69.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr82 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/5.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr83 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/11.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr84 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/51.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr85 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/73.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr86 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/42.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr87 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/47.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr88 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/70.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr89 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/85.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr90 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/9.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr91 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/34.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.page5 .con .cardr92 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/100dar100/78.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+
+.b{
+  display: none !important;
+ 
+}
+.con .a{
+  display: flex !important;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  font-weight: 900;
+  position: absolute;
+  bottom: -73px;
+  opacity: 1;
+  perspective: 1000px;
+  font-size: 24px;
+  margin-left: 0px;
+  margin-right: -49px;
+  border-radius: 10%;
+  transform: scale(.5);
+  z-index: 9;
+}
+.con .card span {
+  display: flex ;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  font-weight: 900;
+  position: absolute;
+  background-color: rgb(204, 206, 208);
+  bottom: -50px;
+  opacity: .5;
+  perspective: 1000px;
+  font-size: 24px;
+  margin-left: 0px;
+  margin-right: -49px;
+  border-radius: 17%;
+  transform: scale(.5);
+  z-index: 8;
+}
+
+@media (max-width: 500px) {
+  .header {
+    height: 60px;
+  }
+  .page1 .con {
+    transform: scale(0.6);
+    top: -100px;
+    right: -965px;
+    height: 300px !important;
+    opacity: .9;
+    border-top-right-radius:0px !important;
+  }
+  .page2 .con {
+    transform: scale(0.6);
+    top: -100px;
+    right: -965px;
+    height: 300px !important;
+    opacity: .9;
+    border-top-right-radius:0px !important;
+  }
+  .page3 .con {
+    transform: scale(0.6);
+    top: -100px;
+    right: -965px;
+    height: 300px !important;
+    opacity: .9;
+    border-top-right-radius:0px !important;
+  }
+  .page4 .con {
+    transform: scale(0.6);
+    top: -100px;
+    right: -965px;
+    height: 300px !important;
+    opacity: .9;
+    border-top-right-radius:0px !important;
+  }
+  .page5 .con {
+    transform: scale(0.6);
+    top: -100px;
+    right: -965px;
+    height: 300px !important;
+    opacity: .9;
+    border-top-right-radius:0px !important;
+  }
+  body {
+    margin-right: 0px;
+    height: 1100px;
+  }
+  /* .page1 {
+    margin-right: 320px;
+  } */
+  .a{
+    font-weight:bolder !important;
+    font-size: 30px !important;
+  }
+  .search {
+    margin-right: 300px;
+    top: 32px;
+    z-index: 9;
+  }
+  .circle{
+    z-index: 20;
+    right : 400px !important;
+    top: 600px !important;
+  }
+  .circle:hover{
+    top: 600px !important;
+  }
+  .btn {
+    display: block !important;
+    left: 1120px !important;
+    top: 19px !important;
+    position: absolute;
+    cursor: pointer;
+  }
+  nav {
+    display: none !important;
+  }
+  .navbar {
+    right: 110px;
+    top: -30px !important;
+  }
+  .header  input{
+    position: absolute;
+    right: 40px !important;
+    top: 32px !important;
+  }
+  
+  .one {
+    margin-left: 130px;
+  }
+  .two {
+    margin-left: 40px;
+  }
+  .three {
+    margin-left: -40px;
+  }
+  .four {
+    margin-top: 10px;
+    margin-left: -40px;
+  }
+}
+
+@media (min-width: 501px) {
+  .activenav {
+    display: none !important;
+  }
+  nav {
+    display: flex !important;
+  }
+  a {
+    display: flex !important;
+  }
+}

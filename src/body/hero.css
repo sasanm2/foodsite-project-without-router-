@@ -1,0 +1,1568 @@
+.hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 650px;
+  width: 1560px;
+  height: 400px;
+  box-shadow: 2px 2px 8px rgb(48, 48, 47);
+}
+.hero1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 1560px;
+  height: 400px;
+  box-shadow: 2px 2px 8px rgb(48, 48, 47);
+}
+.hero2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 1560px;
+  height: 400px;
+  box-shadow: 2px 2px 8px rgb(48, 48, 47);
+}
+h2 {
+  display: block;
+  position: absolute;
+  right: 500px;
+  top: -18px;
+  font-size: 30px;
+  font-weight: bolder;
+  z-index: 2;
+}
+h2:hover {
+  cursor: default;
+}
+.picture img {
+  display: flex;
+  position: absolute;
+  width: 300px;
+  cursor: pointer;
+  height: 300px;
+  background-color: rgb(233, 245, 245);
+  border-radius: 10%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 0px;
+  opacity: 1;
+  z-index: 6;
+  box-shadow: 3px 3px 11px rgb(209, 154, 82);
+  top: 0px;
+  right: 0;
+}
+
+.recpie {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  right: 0;
+  width: 1200px;
+  height: 400px;
+}
+
+ .cardr1 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/26.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+
+.cardr2 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/45.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.card33 {
+  display: flex;
+}
+
+ .cardr3 {
+  display: flex ;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/36.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr4 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/29.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr5 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/71.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+ .cardr6 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/31.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr7 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/68.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr8 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/19.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+ .cardr9 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/48.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+ .cardr10 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/4.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr11 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/46.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+ .cardr12 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/79.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr13 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/27.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr14 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/61.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr15 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/62.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+ .cardr16 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/18.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+ .cardr17 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/17.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr18 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/57.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr19 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/82.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr20 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/66.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr21 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/81.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr22 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/90.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr23 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/95.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr24 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/20.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr25 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/87.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr26 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/33.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr27 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/1.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr28 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/75.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr29 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/76.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr30 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/35.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr31 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/63.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr32 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/37.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr33 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/2.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr34 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/16.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr35 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/41.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr36 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/67.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr38 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/84.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr39 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/88.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr40 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/44.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr41 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/92.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr42 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/3.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr43 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/4.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr37 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/77.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr44 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/91.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr45 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/25.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr46 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/62.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr47 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/59.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr48 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/10.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr49 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/64.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr50 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/60.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr51 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/14.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr52 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/83.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr53 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/43.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr54 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/12.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr55 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/93.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr56 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/49.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr57 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/30.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr58 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/21.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr59 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/38.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr60 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/13.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr61 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/96.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr62 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/22.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr63 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/6.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr64 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/8.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr65 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/74.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.cardr66 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/28.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr1 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/23.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+
+.hero1 .cardr2 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/24.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+
+.hero1 .cardr3 {
+  display: flex ;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/86.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr4 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/54.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr5 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/7.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr6 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/55.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr7 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/72.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr8 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/94.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr9 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/52.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr10 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/32.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr11 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/15.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr12 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/80.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr13 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/53.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr14 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/89.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr15 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/69.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr16 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/5.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr17 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/11.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr18 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/51.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero1 .cardr4 h3 {
+  position: absolute;
+  bottom: 30px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+.hero1 .cardr7 h3 {
+  position: absolute;
+  bottom: 5px;
+  font-size: 20px;
+  margin-left: 4px;
+  margin-right: 26px;
+}
+.hero1 .cardr8 h3 {
+  position: absolute;
+  bottom: 30px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+.hero1 .cardr11 h3 {
+  position: absolute;
+  bottom: 5px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+.hero1 .cardr14 h3 {
+  position: absolute;
+  bottom: 33px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+.hero1 .cardr15 h3 {
+  position: absolute;
+  bottom: 5px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+.hero2 .cardr1 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/73.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+
+.hero2 .cardr2 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/42.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+
+.hero2 .cardr3 {
+  display: flex ;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/47.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero2 .cardr4 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/70.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero2 .cardr5 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/85.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero2 .cardr6 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/9.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero2 .cardr7 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/34.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero2 .cardr8 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+  position: relative;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-image: url("/src/images/300dar200/78.png");
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+.hero2 .cardr3 h3 {
+  position: absolute;
+  bottom: 10px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+.hero2 .cardr7 h3 {
+  position: absolute;
+  bottom: 10px;
+  font-size: 20px;
+  margin-left: 4px;
+  margin-right: 26px;
+}
+.hero2 .cardr8 h3 {
+  position: absolute;
+  bottom: 10px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+
+.picture {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  left: -300px;
+  position: absolute;
+  background-color: rgb(246, 251, 252);
+  margin-top: 30px;
+  border-radius: 20%;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 14px rgb(108, 115, 116);
+}
+
+.recpie .cardr1:hover,
+.recpie .cardr2:hover,
+.recpie .cardr3:hover,
+.more:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cardr3 h3 {
+  position: absolute;
+  bottom: 40px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+
+.cardr1 h3 {
+  position: absolute;
+  bottom: 10px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+.cardr2 h3 {
+  position: absolute;
+  bottom: 10px;
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 26px;
+}
+
+.recpie .more {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  left: 30px;
+  top: 200px;
+  z-index: 1;
+  padding-left: 0px;
+  opacity: 0.9;
+  border-radius: 20%;
+  box-shadow: 2px 2px 12px rgb(219, 205, 150);
+  cursor: pointer;
+}
+.dot {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 2;
+  left: 0px;
+  top: 4px;
+}
+.dot1 {
+  left: 5px;
+}
+.dot2 {
+  left: 20px;
+}
+.dot3 {
+  left: 35px;
+}
+.more h6 {
+  position: absolute;
+  font-size: 20px;
+  top: -80px;
+  left: 12px;
+}
+
+@media (max-width: 500px) {
+  .hero {
+    top: -80px;
+    height: 260px;
+  }
+  .hero1 {
+    top: -110px;
+    height: 260px;
+  }
+  .hero2 {
+    top: -130px;
+    height: 260px;
+  }
+  img {
+    width: 450px;
+    height: 250px;
+    cursor: pointer;
+  }
+  .recpie {
+    top: -30px;
+    right: 280px;
+    height: 260px;
+    transform: scale(0.6);
+    cursor: pointer;
+  }
+  .card33{
+    display: none !important;
+  }
+   .more {
+    transform: scale(0.7);
+    right: 758px;
+    top: 130px;
+    z-index: 5;
+  }
+   .more:hover {
+    transform: scale(0.8);
+  }
+
+  h2 {
+    right: 600px;
+    top: -30px;
+  }
+  .picture {
+    display: none;
+  }
+}
